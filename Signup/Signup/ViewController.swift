@@ -1,4 +1,10 @@
 import UIKit
 
-class ViewController: UIViewController {}
+class ViewController: UIViewController {
+    @IBOutlet weak var stackView: UIStackView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
 

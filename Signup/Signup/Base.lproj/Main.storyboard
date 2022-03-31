@@ -3,15 +3,57 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Signup" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Signup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qC-39-ba8">
+                                <rect key="frame" x="138" y="74" width="138.5" height="44.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44.5" id="n90-tq-yt0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8FZ-mM-zR5">
+                                <rect key="frame" x="10" y="138.5" width="394" height="423.5"/>
+                                <viewLayoutGuide key="safeArea" id="2OI-Cb-9Mu"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8FZ-mM-zR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5U6-mB-vdW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8qC-39-ba8" secondAttribute="bottom" constant="743.5" id="Mga-0Z-WNh"/>
+                            <constraint firstItem="8qC-39-ba8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vpg-hQ-VV3"/>
+                            <constraint firstItem="8FZ-mM-zR5" firstAttribute="top" secondItem="8qC-39-ba8" secondAttribute="bottom" constant="20" id="e9c-Sq-Xxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8FZ-mM-zR5" secondAttribute="trailing" constant="10" id="fuC-Vy-WW6"/>
+                            <constraint firstItem="8qC-39-ba8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fy3-aC-L9z"/>
+                            <constraint firstItem="8FZ-mM-zR5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-300" id="oge-MQ-w8i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="8FZ-mM-zR5" id="LVL-JV-00U"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
