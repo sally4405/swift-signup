@@ -23,6 +23,7 @@ class InputView: UIView {
             view.frame = self.bounds
             addSubview(view)
         }
+        textField.autocorrectionType = .no
     }
 
 }
