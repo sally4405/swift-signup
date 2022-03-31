@@ -21,6 +21,23 @@ class ViewController: UIViewController {
         inputView.messageLabel.text = message
         
         stackView.addArrangedSubview(inputView)
+        
+        switch title {
+        case "아이디":
+            inputView.textField.addTarget(self, action: #selector(idChanged(_:)), for: .editingChanged)
+        case "비밀번호":
+            inputView.textField.addTarget(self, action: #selector(passwordChanged(_:)), for: .editingChanged)
+        default:
+            break
+        }
+    }
+    
+    @objc func idChanged(_ sender: UITextField) {
+        self.id = sender.text ?? ""
+    }
+    
+    @objc func passwordChanged(_ sender: UITextField) {
+        self.password = sender.text ?? ""
     }
     
     @IBAction func nextButtonTouched(_ sender: UIButton) {
