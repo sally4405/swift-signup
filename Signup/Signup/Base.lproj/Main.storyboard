@@ -29,15 +29,28 @@
                                 <rect key="frame" x="10" y="138.5" width="394" height="423.5"/>
                                 <viewLayoutGuide key="safeArea" id="2OI-Cb-9Mu"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSW-48-Wed">
+                                <rect key="frame" x="173" y="788" width="68" height="44"/>
+                                <color key="tintColor" red="0.90035116790000003" green="0.64533436730000004" blue="0.69446376119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다음">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQg-4V-4kZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="8FZ-mM-zR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5U6-mB-vdW"/>
+                            <constraint firstItem="aSW-48-Wed" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYR-Yr-key"/>
                             <constraint firstItem="8qC-39-ba8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vpg-hQ-VV3"/>
                             <constraint firstItem="8FZ-mM-zR5" firstAttribute="top" secondItem="8qC-39-ba8" secondAttribute="bottom" constant="20" id="e9c-Sq-Xxf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8FZ-mM-zR5" secondAttribute="trailing" constant="10" id="fuC-Vy-WW6"/>
                             <constraint firstItem="8qC-39-ba8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fy3-aC-L9z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aSW-48-Wed" secondAttribute="bottom" constant="30" id="kwq-yc-997"/>
                             <constraint firstItem="8FZ-mM-zR5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-300" id="oge-MQ-w8i"/>
                         </constraints>
                     </view>

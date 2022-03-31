@@ -2,6 +2,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
+    private var id: String = ""
+    private var password: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,10 @@ class ViewController: UIViewController {
         inputView.messageLabel.text = message
         
         stackView.addArrangedSubview(inputView)
+    }
+    
+    @IBAction func nextButtonTouched(_ sender: UIButton) {
+        print("id: \(self.id), password: \(self.password)")
     }
 }
 
